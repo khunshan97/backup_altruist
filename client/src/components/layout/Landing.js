@@ -5,23 +5,22 @@ import PropTypes from "prop-types";
 
 export const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
+    return <Redirect to="/dashboard" />;
   }
 
   return (
-    <section className='landing'>
-      <div className='dark-overlay'>
-        <div className='landing-inner'>
-          <h1 className='x-large'>Konnect</h1>
-          <p className='lead'>
-            Create Profile With Your Experience And Skills, Share Posts And Get
-            Connected With Other People
+    <section className="landing">
+      <div className="dark-overlay">
+        <div className="landing-inner">
+          <h1 className="x-large">Altruist</h1>
+          <p className="lead">
+            Help others today so you could be helped tomorrow.
           </p>
-          <div className='buttons'>
-            <Link to='/register' className='btn btn-primary'>
+          <div className="buttons">
+            <Link to="/register" className="btn btn-primary">
               Sign Up
             </Link>
-            <Link to='/login' className='btn btn-light'>
+            <Link to="/login" className="btn btn-light">
               Login
             </Link>
           </div>
